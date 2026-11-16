@@ -25,9 +25,27 @@ FSO_Sim
 
 The script opens four figures. Random data generation uses a fixed seed (`42`) so runs are reproducible in a compatible MATLAB environment.
 
+## Results
+
+### MLP detection comparison
+
+![MLP detection comparison](results/mlp-symbol-error-rate.png)
+
+### Theoretical QAM reference
+
+![Theoretical QAM reference curves](results/theoretical-qam-ber.png)
+
+### 64-QAM across turbulence levels
+
+![64-QAM turbulence comparison](results/64qam-turbulence.png)
+
+### 4-QAM confusion matrix
+
+![4-QAM confusion matrix](results/qam-confusion-matrix.png)
+
 ## Metric note
 
-The simulated classifier comparison counts incorrect symbols. The plotted measure is therefore symbol error rate (SER); for binary OOK, SER equals bit error rate. The separate QAM curves are theoretical reference formulas and are not the same experiment as the turbulence simulation.
+The submitted MLP comparison image labels its vertical axis BER, but the simulation counts incorrect symbols for 4-PAM and 4-QAM. Interpret those traces as symbol error rate (SER); for binary OOK, SER equals BER. The separate QAM reference curves are theoretical and are not the same experiment as the turbulence simulation.
 
 ## Scope
 
